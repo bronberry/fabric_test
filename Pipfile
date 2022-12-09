@@ -6,6 +6,18 @@ name = "pypi"
 [packages]
 django-debug-toolbar = "*"
 django-admin-sortable2 = "*"
+tox = "*"
+drf-yasg = "*"
+django-phonenumber-field = "*"
+django-phonenumbers = "*"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+django-robots = "*"
+django = "*"
+django-ckeditor = "*"
+django-solo = "*"
+drf-spectacular = "*"
 
 [dev-packages]
 

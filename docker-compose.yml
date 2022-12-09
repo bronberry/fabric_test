@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  api:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: ./entrypoint.sh
+    command: python manage.py runserver 127.0.0.1:8000
+    volumes:
+      - .:/fabric_test
+      - .
+    ports:
+      - "8000:8000"
