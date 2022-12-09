@@ -4,7 +4,6 @@ from .models import Message, Client, Distribution
 
 
 class MessageListSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Message
         fields = (

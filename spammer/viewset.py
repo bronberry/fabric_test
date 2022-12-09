@@ -9,9 +9,11 @@ from rest_framework.viewsets import GenericViewSet
 from drf_spectacular.utils import extend_schema
 
 from spammer.models import Distribution, Client, Message
-from spammer.serializers import DistributionSerializer,\
-    ClientListSerializer, \
-    MessageListSerializer
+from spammer.serializers import (
+    DistributionSerializer,
+    ClientListSerializer,
+    MessageListSerializer,
+)
 
 
 class SoloModelViewSet(GenericViewSet):

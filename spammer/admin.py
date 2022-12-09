@@ -19,7 +19,10 @@ class ClientInline(StackedInline):
 @admin.register(Distribution)
 class DistributionListAdmin(SortableAdminMixin, admin.ModelAdmin):
     list_display = ("text",)
-    inlines = (ClientInline, MessageInline,)
+    inlines = (
+        ClientInline,
+        MessageInline,
+    )
 
 
 @admin.register(Message)

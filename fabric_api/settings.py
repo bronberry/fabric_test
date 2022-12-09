@@ -135,6 +135,4 @@ if not DEBUG:
         "rest_framework.renderers.JSONRenderer"
     ]
 
-TEMPLATE_LOADERS = (
-    'django.template.loaders.eggs.Loader',
-    )
+TEMPLATE_LOADERS = ("django.template.loaders.eggs.Loader",)
